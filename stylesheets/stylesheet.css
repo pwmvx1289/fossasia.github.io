@@ -571,8 +571,10 @@ img {
   background-color:#8BA6D7;
 }
 #facebook {
-    background-image: url(http://opendesign.asia/sites/default/files/images/5763976573_4ee5bbf92c_o_0.jpg);
+    background-image: url("../images/fbsection-back.jpg");
     background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
 }
 /* ==========================================================================
    =MASTHEAD
