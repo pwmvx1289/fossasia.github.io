@@ -20,7 +20,6 @@ $(document).ready(function() {
     delay: 5000
   });
 
-
   //
   // Github linking contributers
   //
