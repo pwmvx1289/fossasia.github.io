@@ -39,7 +39,6 @@ $(document).ready(function() {
     }
   });
 
-
   //
   // Menu
   //
@@ -54,7 +53,6 @@ $(document).ready(function() {
 
     return false;
   });
-
 
   //
   // Animation
@@ -90,7 +88,6 @@ $(document).ready(function() {
     }
   });
 
-
   $('.tweets-feed').each(function(index) {
     $(this).attr('id', 'tweets-' + index);
   }).each(function(index) {
@@ -125,7 +122,6 @@ $(document).ready(function() {
     twitterFetcher.fetch($('#tweets-' + index).attr('data-widget-id'), '', 5, true, false, true, '', false, handleTweets, false);
   });
 
-
   //
   // MAP
   //
@@ -141,7 +137,6 @@ $(document).ready(function() {
 
   $('.map-wrap').on('click', hide_map_wrap);
   $('.map').on('click', set_map_wrap);
-
 
   //
   // MENU
@@ -163,10 +158,11 @@ $(document).ready(function() {
   };
 
   $('.menu__toggle').on('click', function() {
-    if ($('.menu').is(':visible'))
+    if ($('.menu').is(':visible')) {
       menu().hide();
-    else
+    } else {
       menu().show();
+    }
   });
 
   $(document).on('click', function(e) {
